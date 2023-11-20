@@ -61,7 +61,11 @@ The client side consists of a web page with the following features:
 ### Firewall 
 1. Open Terminal
 2. Check the status - sudo ufw status
-3. Allow the Port - `sudo ufw allow PORT_NUMBER` (PORT_NUMBER = Port You are using)
+3. Allow the Port - `sudo ufw allow PORT_NUMBER` (PORT_NUMBER = Port Server is using)
 4. Allow incoming traffic on Port - `sudo pacman -S ufw`
 5. Restart the firewall - `sudo ufw enable`
 6. To check the Status - `sudo ufw status`
+
+# License
+
+This project is licensed under the MIT License - see the [License](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/LICENSE) file for details.
