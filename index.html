@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Activity Data</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to the Student Activity Portal</h1>
+
+    <!-- Form for user input -->
+    <form class="form-inline" id="dataForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="prn">PRN:</label>
+      <input type="text" id="prn" name="prn" required /><br />
+
+      <label for="division">Division:</label>
+      <select id="division" name="division" required>
+        <option value="CS-A">CS-A</option>
+        <option value="CS-B">CS-B</option>
+        <option value="CS-C">CS-C</option>
+        <option value="CS-D">CS-D</option></select
+      ><br />
+
+      <label>Assignments:</label>
+      <label
+        ><input type="checkbox" name="assignment" value="1" /> Assignment
+        1</label
+      >
+      <label
+        ><input type="checkbox" name="assignment" value="2" /> Assignment
+        2</label
+      >
+      <label
+        ><input type="checkbox" name="assignment" value="3" /> Assignment
+        3</label
+      ><br />
+
+      <!-- Use 'type="button"' to prevent the default form submission -->
+      <button type="button" onclick="submitData()">Submit</button>
+    </form>
+
+    <div style="display: none"><pre id="activityData"></pre></div>
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>PRN</th>
+          <th>Division</th>
+          <th>Assignments</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </body>
+</html>
