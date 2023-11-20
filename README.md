@@ -1,5 +1,3 @@
-# HTTP-Client-Server-Connection-using-TCP-IP
-
 # HTTP Client-Server Communication using TCP/IP
 
 ## Description
@@ -41,4 +39,4 @@ The client side consists of a web page with the following features:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/http-client-server.git
+   git clone https://github.com/21Sandesh/http-client-server.git
