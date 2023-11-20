@@ -2,30 +2,40 @@
 
 ## Description
 
-This project implements a simple HTTP client-server communication system using TCP/IP. The server, implemented in C++, handles incoming requests from different clients. It writes and stores the data in a file named "data.txt" and reads the content of the file to send data back to the HTTP client.
+This project demonstrates a simple HTTP client-server communication system using TCP/IP. The server, implemented in C++, creates sockets, establishes connections, and handles incoming requests from multiple clients. The server writes received data to a file named "data.txt" and reads the file's content to send data back to HTTP clients.
 
-## Server Side
+## Server Features
 
 The server has the following functionalities:
 
-- Handles incoming requests from HTTP clients.
-- Writes and stores client data in the "data.txt" file.
-- Reads the content of the file and sends it back to HTTP clients.
+- Socket Programming in C++
+- Connection establishment and management
+- Handling incoming requests and storing data in "data.txt"
+- Reading data from "data.txt" and responding to HTTP clients
 
-## Client Side
+## Client Features
 
 The client side consists of a web page with the following features:
 
-- Input fields for Name (Text), PRN (Number), Division (Dropdown), and Assignments (Checkbox).
-- Upon submitting the data, it is sent to the server.
-- The server stores the data in the "data.txt" file.
+- HTML-based client with a form for data input
+- Fields: Name (Text), PRN (Number), Division (Dropdown - CS-A, CS-B, CS-C, CS-D), Assignments (Checkbox - 1, 2, 3)
+- Submits data to the server for storage in "data.txt"
+- Retrieves stored data from the server and displays it in a tabular form on the web page
 
-## Usage
+## Project Structure
+
+- Server - "server.cpp" C++ File for Server-side Implementation.
+- Client - "index.html" HTML File for Client-side Interface.
 
 ### Server
 
 1. Compile and run the server code written in C++.
 2. The server listens for incoming requests on a specified port.
+
+### Running the Server
+1. In the Terminal use the Command - g++ -std=c++11 -o server server.cpp -lboost_system -pthread
+   - server.cpp is the C++ File Name.
+2. Then use the Command - ./server (To Start the Server)
 
 ### Client
 
@@ -35,8 +45,23 @@ The client side consists of a web page with the following features:
 4. The server stores the data in "data.txt".
 5. Refresh the web page to fetch and display the data in a tabular form.
 
-## Installation
+### Running the Client
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/21Sandesh/http-client-server.git
+- For VS Code - Open the "index.html" File and start the Live Server or Show Preview.
+- For Browser - Simply open the "index.html" File in the Browser
+
+## Note
+
+- This code was Designed and Implemented on Linux (Manjaro Gnome) Operating System.
+- C++ Libraries like "arpa/inet.h", "sys/socket.h" and "pthread.h" are not supported in Windows Operating System.
+- To Run the Server in Windows, use Winsock, Winsock2 Libraries and make changes accordingly.
+- You would need to disable the firewall for the Ports used to overcome the Errors.
+- For Error Troubleshooting and Solving, keep an eye on the Browser's Console Window.
+
+### Firewall 
+1. Open Terminal
+2. Check the status - sudo ufw status
+3. Allow the Port - sudo ufw allow PORT_NUMBER (PORT_NUMBER = Port You are using)
+4. Allow incoming traffic on Port - sudo pacman -S ufw
+5. Restart the firewall - sudo ufw enable
+6. To check the Status - sudo ufw status
