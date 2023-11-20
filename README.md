@@ -33,9 +33,9 @@ The client side consists of a web page with the following features:
 2. The server listens for incoming requests on a specified port.
 
 ### Running the Server
-1. In the Terminal use the Command - 'g++ -std=c++11 -o server server.cpp -lboost_system -pthread'
+1. In the Terminal use the Command - `g++ -std=c++11 -o server server.cpp -lboost_system -pthread`
    - server.cpp is the C++ File Name.
-2. Then use the Command - './server' (To Start the Server)
+2. Then use the Command - `./server` (To Start the Server)
 
 ### Client
 
@@ -60,8 +60,8 @@ The client side consists of a web page with the following features:
 
 ### Firewall 
 1. Open Terminal
-2. Check the status - 'sudo ufw status'
-3. Allow the Port - 'sudo ufw allow PORT_NUMBER' (PORT_NUMBER = Port You are using)
-4. Allow incoming traffic on Port - 'sudo pacman -S ufw'
-5. Restart the firewall - 'sudo ufw enable'
-6. To check the Status - 'sudo ufw status'
+2. Check the status - sudo ufw status
+3. Allow the Port - `sudo ufw allow PORT_NUMBER` (PORT_NUMBER = Port You are using)
+4. Allow incoming traffic on Port - `sudo pacman -S ufw`
+5. Restart the firewall - `sudo ufw enable`
+6. To check the Status - `sudo ufw status`
