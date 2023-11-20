@@ -72,6 +72,6 @@ The client side consists of a web page with the following features:
 5. Restart the firewall - `sudo ufw enable`
 6. To check the Status - `sudo ufw status`
 
-# License
+## License
 
 This project is licensed under the MIT License - see the [License](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/LICENSE) file for details.
