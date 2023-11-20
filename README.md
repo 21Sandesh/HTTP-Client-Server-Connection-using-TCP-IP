@@ -10,8 +10,8 @@ The server has the following functionalities:
 
 - Socket Programming in C++
 - Connection establishment and management
-- Handling incoming requests and storing data in "data.txt"
-- Reading data from "data.txt" and responding to HTTP clients
+- Handling incoming requests and storing data in ["data.txt"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/data.txt)
+- Reading data from ["data.txt"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/data.txt) and responding to HTTP clients
 
 ## Client Features
 
@@ -19,13 +19,18 @@ The client side consists of a web page with the following features:
 
 - HTML-based client with a form for data input
 - Fields: Name (Text), PRN (Number), Division (Dropdown - CS-A, CS-B, CS-C, CS-D), Assignments (Checkbox - 1, 2, 3)
-- Submits data to the server for storage in "data.txt"
+- Submits data to the server for storage in ["data.txt"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/data.txt)
 - Retrieves stored data from the server and displays it in a tabular form on the web page
 
 ## Project Structure
 
-- Server - "server.cpp" C++ File for Server-side Implementation.
-- Client - "index.html" HTML File for Client-side Interface.
+- Server - ["server.cpp"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/server.cpp) C++ File for Server-side Implementation.
+- Client - ["index.html"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/index.html) HTML File for Client-side Interface.
+
+## Changes
+
+1. Change the serverIP variable in ["script.js"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/script.js) to the IP of the Host Device
+2. Simillarly change the HostIP in ["server.cpp"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/server.cpp) line 13 to the IP of the Host Device
 
 ### Server
 
@@ -34,24 +39,25 @@ The client side consists of a web page with the following features:
 
 ### Running the Server
 1. In the Terminal use the Command - `g++ -std=c++11 -o server server.cpp -lboost_system -pthread`
-   - server.cpp is the C++ File Name.
+   - [server.cpp](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/server.cpp) is the C++ File Name.
 2. Then use the Command - `./server` (To Start the Server)
 
 ### Client
 
-1. Open the "index.html" file in a web browser.
+1. Open the ["index.html"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/index.html) file in a web browser.
 2. Fill in the form fields with the required data.
 3. Submit the form to send data to the server.
-4. The server stores the data in "data.txt".
+4. The server stores the data in ["data.txt"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/data.txt).
 5. Refresh the web page to fetch and display the data in a tabular form.
 
 ### Running the Client
 
-- For VS Code - Open the "index.html" File and start the Live Server or Show Preview.
-- For Browser - Simply open the "index.html" File in the Browser
+- For VS Code - Open the ["index.html"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/index.html) File and start the Live Server or Show Preview.
+- For Browser - Simply open the ["index.html"](https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP/blob/main/index.html) File in the Browser
 
 ## Note
 
+- The Server and Client should be Connected to Same Wifi Network. 
 - This code was Designed and Implemented on Linux (Manjaro Gnome) Operating System.
 - C++ Libraries like "arpa/inet.h", "sys/socket.h" and "pthread.h" are not supported in Windows Operating System.
 - To Run the Server in Windows, use Winsock, Winsock2 Libraries and make changes accordingly.
